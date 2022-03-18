@@ -188,6 +188,9 @@ function hostfully_admin_page_js() { ?>
     // Hostfully scripts
     var previewJs = `<?php echo plugins_url('js/jquery.js', __FILE__); ?>`;
 
+    // Images path
+    var imagePath = `<?php echo plugins_url('img', __FILE__); ?>`;
+
     // Preview page layouts
     var previewTemplates = [
         null,

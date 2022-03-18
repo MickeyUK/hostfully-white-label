@@ -33,6 +33,13 @@ var footerHTML;
  */
 jQuery(document).ready(function () {
 
+    // Set image path
+    for (var i = 0; i < previewTemplates.length; i++) {
+        if (previewTemplates[i] != null) {
+            previewTemplates[i] = previewTemplates[i].replace(/IMAGE_PATH/g, imagePath);
+        }
+    }
+
     // Set preview CSS
     jQuery('#editor-preview-frame').contents().find('head').append(`<link rel="stylesheet" href="${previewStyle}" type="text/css" />`);
 
