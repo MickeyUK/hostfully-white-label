@@ -40,6 +40,15 @@ jQuery(document).ready(function () {
         }
     }
 
+    // Decode saved HTML
+    for (var i = 0; i < editors.length; i++) {
+        if (editors[i] != null) {
+            editors[i].html = htmlDecode(editors[i].html);
+            editors[i].css = htmlDecode(editors[i].css);
+            editors[i].javascript = editors[i].javascript;
+        }
+    }
+
     // Set preview CSS
     jQuery('#editor-preview-frame').contents().find('head').append(`<link rel="stylesheet" href="${previewStyle}" type="text/css" />`);
 
@@ -105,6 +114,7 @@ function update() {
     // Merge all the Javascript
     updateJS();
 
+    // Adds header to homepage preview
     jQuery("#editor-preview-frame").contents().find('.header-homepage').prepend(headerHTML);
 
     // Generate export code
@@ -313,9 +323,22 @@ function minCSS(_content) {
  */
 function escapeHTML(unsafe) {
     return unsafe
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/\\/g, "&#92;")
+        .replace(/'/g, "&#039;");
+}
+
+/**
+ * Unescape HTML for inserting in to textarea.
+ * 
+ * @param {*} input 
+ * @returns 
+ */
+function htmlDecode(input) {
+    var e = document.createElement('textarea');
+    e.innerHTML = input;
+    return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
 }
