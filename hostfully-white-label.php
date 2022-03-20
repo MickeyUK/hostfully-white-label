@@ -108,9 +108,9 @@ function hostfullywl_admin_page() {
                 do_settings_sections( 'hostfullywl_options' );
 
                 for ($i=0; $i<6; $i++) {
-                    echo '<input type="hidden" id="editor-input-'.$i.'-html" name="hostfullywl_editor_'.$i.'_html" value="'.get_option('hostfullywl_editor_'.$i.'_html').'">';
-                    echo '<input type="hidden" id="editor-input-'.$i.'-css" name="hostfullywl_editor_'.$i.'_css" value="'.get_option('hostfullywl_editor_'.$i.'_css').'">';
-                    echo '<input type="hidden" id="editor-input-'.$i.'-javascript" name="hostfullywl_editor_'.$i.'_javascript" value="'.get_option('hostfullywl_editor_'.$i.'_javascript').'">';
+                    echo '<input type="hidden" id="editor-input-'.$i.'-html" name="hostfullywl_editor_'.$i.'_html">';
+                    echo '<input type="hidden" id="editor-input-'.$i.'-css" name="hostfullywl_editor_'.$i.'_css">';
+                    echo '<input type="hidden" id="editor-input-'.$i.'-javascript" name="hostfullywl_editor_'.$i.'_javascript">';
                 }
             ?>
             <div id="editor-grid">
@@ -164,6 +164,7 @@ function hostfullywl_admin_page() {
 
             <input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes">
             <input type="submit" name="submit" id="submit" class="button button-secondary" value="Export" onclick="event.preventDefault(); setExport();">
+            <input type="submit" name="submit" id="submit" class="button button-secondary" value="Clear" onclick="event.preventDefault(); tempClear();">
         </form>
     </div>
 
@@ -210,7 +211,6 @@ function hostfully_admin_page_js() { ?>
             javascript: `<?php echo get_option('hostfullywl_editor_'.$i.'_javascript'); ?>`
         });
     <?php } ?>
-
     </script>
 
 <?php

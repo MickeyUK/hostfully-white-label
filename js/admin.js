@@ -45,7 +45,7 @@ jQuery(document).ready(function () {
         if (editors[i] != null) {
             editors[i].html = htmlDecode(editors[i].html);
             editors[i].css = htmlDecode(editors[i].css);
-            editors[i].javascript = editors[i].javascript;
+            editors[i].javascript = htmlDecode(editors[i].javascript);
         }
     }
 
@@ -224,8 +224,12 @@ function saveEditors() {
         // Set content
         editors[activeTab][mode] = editor.getValue();
 
-        jQuery('#editor-input-' + activeTab + '-' + mode).val(escapeHTML(editor.getValue()));
+    }
 
+    for (var i = 0; i < editors.length; i++) {
+        jQuery('#editor-input-' + i + '-html').val(escapeHTML(editors[i].html));
+        jQuery('#editor-input-' + i + '-css').val(escapeHTML(editors[i].css));
+        jQuery('#editor-input-' + i + '-javascript').val(escapeHTML(editors[i].javascript));
     }
 
 }
@@ -341,4 +345,14 @@ function htmlDecode(input) {
     var e = document.createElement('textarea');
     e.innerHTML = input;
     return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+}
+
+function tempClear() {
+
+    for (var i = 0; i < 6; i++) {
+        jQuery('#editor-input-' + i + '-html').val('');
+        jQuery('#editor-input-' + i + '-css').val('');
+        jQuery('#editor-input-' + i + '-javascript').val('');
+    }
+
 }
