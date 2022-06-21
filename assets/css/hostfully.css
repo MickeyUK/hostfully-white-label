@@ -129,3 +129,10 @@ body{font-family:'Source Sans Pro',sans-serif;font-weight:300}.table.noborder>tb
 .force-visible {
     display: block !important;
 }
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px !important;
+    line-height: 1.42857143 !important;
+    vertical-align: top !important;
+    border-top: 1px solid #ddd !important;
+}

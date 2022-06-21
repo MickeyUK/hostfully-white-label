@@ -1,0 +1,21 @@
+{
+    "tabs": {
+        "header": "Header",
+        "footer": "Footer",
+        "home": "Home",
+        "listings": "Listings",
+        "property": "Property",
+        "checkout": "Checkout",
+        "global": "Global"
+    },
+    "pills": {
+        "code": "Code",
+        "template": "Template",
+        "settings": "Settings"
+    },
+    "modal": [
+        {
+            "title": "Getting Started"
+        }
+    ]
+}
