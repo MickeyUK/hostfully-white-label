@@ -87,7 +87,7 @@ class Hostfully_Whitelabel {
 
         // Editor instance values
         register_setting( 'hostfullywl_options', 'hostfullywl_editor_instance_id' );
-        for ($i=0; $i<6; $i++) {
+        for ($i=0; $i<7; $i++) {
             register_setting( 'hostfullywl_options', 'hostfullywl_editor_'.$i.'_html' );
             register_setting( 'hostfullywl_options', 'hostfullywl_editor_'.$i.'_css' );
             register_setting( 'hostfullywl_options', 'hostfullywl_editor_'.$i.'_javascript' );

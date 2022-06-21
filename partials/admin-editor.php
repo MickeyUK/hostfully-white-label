@@ -5,7 +5,7 @@
             do_settings_sections( 'hostfullywl_options' );
 
             // ACE Editor code
-            for ($i=0; $i<6; $i++) {
+            for ($i=0; $i<7; $i++) {
                 echo '<input type="hidden" id="editor-input-'.$i.'-html" name="hostfullywl_editor_'.$i.'_html">';
                 echo '<input type="hidden" id="editor-input-'.$i.'-css" name="hostfullywl_editor_'.$i.'_css">';
                 echo '<input type="hidden" id="editor-input-'.$i.'-javascript" name="hostfullywl_editor_'.$i.'_javascript">';
