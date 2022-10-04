@@ -2,7 +2,7 @@
 
 /**
  * @link              https://mickeyuk.github.io
- * @since             1.0.0
+ * @since             1.0.2
  * @package           HCS_Hostfully_Whitelabel
  *
  * @wordpress-plugin

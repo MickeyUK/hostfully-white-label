@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img style="width: 100px; height: 100px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDkuNDQgODY0LjI4Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzM3MzlBQzt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFzc2V0IDE8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNjIuMDcsODY0LjI4Yy0xLjA2LTItMS00LjEtMS02LjI2UTYxLDYzOCw2MSw0MThjMC0zLjg2LDEuMzQtNiw0LjU1LTcuOTNRMTMzLjEsMzY5LDIwMC42LDMyNy42NWMxLjc1LTEuMDcsMy40Ni0zLjE2LDUuODItMS44OSwyLjYsMS40MSwxLjY4LDQuMTQsMS42OCw2LjM1cTAsMTA5LDAsMjE4YzAsNy41NCwwLDcuNTUsNy40MSw3LjU1cTkzLjc1LDAsMTg3LjQ5LjEyYzUsMCw1LjkyLTEuNDUsNS45MS02LjEzcS0uMjItMTA5LjI0LS4xLTIxOC40OWE0Miw0MiwwLDAsMSwuMDctNC40OWMuMzItMy4xOSwyLTQsNC44NC0yLjU1Ljg4LjQ1LDEuNzMsMSwyLjU4LDEuNVE0ODMuNjQsMzY4Ljc3LDU1MSw0MDkuODNjMy43OSwyLjMsNS4wOSw0LjgyLDUuMDksOS4xOHEtLjE3LDIxOS0uMDksNDM4YzAsMi40OC4xLDQuOTUtLjkyLDcuM2gtMTQ1Yy0xLjYyLTIuMTktMS4yMy00Ljc0LTEuMjMtNy4yMXEwLTc1LjkzLDAtMTUxLjg2YzAtNy4xOS0uMTItNy4zMi03LjE5LTcuMzJIMjE1LjMxYy03LjA5LDAtNy4xOC4xMS03LjE4LDcuMjhWODU3LjUzYzAsMi4zMS4yMiw0LjY0LTEuMDYsNi43NVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0uMDcsMzI5LjY3di01LjJRLjA3LDI1My4yNCwwLDE4MmMwLTMuNDEsMS01LjMsNC03LjA2UTE1Mi44NCw4OC4xMiwzMDEuNTEsMWMzLjE3LTEuODUsNS4wOS0uODYsNy41Ny41OVE0NDMuNjksODAuMzMsNTc4LjMxLDE1OWM5LjA1LDUuMjksMTgsMTAuNywyNy4xOCwxNS43OSwyLjgzLDEuNTcsNCwzLjI3LDQsNi41OXEtLjE4LDcxLjc1LS4wOSwxNDMuNDdjMCw1LjE5LDAsNS4xOS00Ljc0LDIuNDRRNDU2LjQ0LDI0MC43MSwzMDguMzIsMTU0Yy0zLjE3LTEuODYtNS4yOC0xLjM4LTguMDkuMjZRMTU0LjM0LDIzOS42Nyw4LjM3LDMyNUM1Ljk0LDMyNi4zOSwzLjQ3LDMyNy43NS4wNywzMjkuNjdaIi8+PC9nPjwvZz48L3N2Zz4=" />
+  <img style="width: 100px; height: 100px;" src="readme/hostfully.svg" />
 
 
   <h3 align="center">Hostfully White Label</h3>
@@ -40,9 +40,24 @@ A WordPress plugin for creating white label code for [Hostfully](https://hostful
 
 ## Features
 
-* Prebuilt templates for creating responsive headers and footers
-* Injects custom header in to your Hostfully home page
-* Custom layouts for listings
+**Default Theme Improvements**
+This plugin automatically inserts a few CSS tweaks to the default Hostfully theme, fixing any potential issues with custom white label code, making things look a bit neater and making it more mobile responsive.
+
+---
+
+**Inject Header on Homepage**
+<img src="readme/feature_1.png">
+By default, Hostfully does not show your custom header on your agency's homepage, only the footer. This plugin adds an extra bit of javascript that will automatically inject your custom header.
+
+## How to Use
+
+<img src="readme/overview.png"/>
+
+When you install the plugin, it will add **White Label** option to the dashboard. Here you'll find an editor for writing your custom HTML, CSS and JavaScript white label code. The previews give you an idea of how the white label code will appear on the Hostfully website.
+
+Each customizable section of your agency pages are split in to tabs to make things easier to manage.
+
+Clicking **Export** will display the merged white label code. Copy and paste each code snippet to the corresponding boxes on the White Labelling section of your Hostfully agency dashboard.
 
 ## Roadmap
 

@@ -580,7 +580,7 @@ app.updatePreview = function () {
     jQuery("#editor-preview-frame").contents().find('.custom-header').html(app.data.editors[0].html.replace(/\n|\t/g, ' '));
 
     // Insert footer HTML and Javascript
-    jQuery("#editor-preview-frame").contents().find('#footer .container').html(app.data.editors[1].html.replace(/\n|\t/g, ' ') + `<script>${app.mergedJS}</script>`);
+    jQuery("#editor-preview-frame").contents().find('#footer .container').html(app.data.editors[1].html.replace(/\n|\t/g, ' ') + `<script>$('body').removeClass(); ${app.mergedJS}</script>`);
 
 }
 

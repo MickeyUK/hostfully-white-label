@@ -72,3 +72,76 @@ a {
 #blueimp-desktop-gallery-carousel.diaporama.diaporama-multiple {
     margin-top: 40px !important;
 }
+
+@media only screen and (max-width: 1200px) {
+    .index-rubrique-header .panel-body {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 10px !important;
+    }
+    .index-rubrique-header .panel-body hr {
+        margin: 16px 0 !important;
+    }
+    .index-rubrique-header .panel-body .col-xs-3 {
+        display: none !important;
+        padding: 0 !important;
+    }
+    .index-rubrique-header .panel-body .col-xs-9 {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .table.book td {
+        display: flex !important;
+        border: none !important;
+        width: 100% !important;
+        line-height: 0 !important;
+        background: none !important;
+        padding-left: 16px !important;
+    }
+    .table.book tr {
+        display: flex !important;
+        flex-direction: column !important;
+        border-top: 1px solid #ddd !important;
+        gap: 10px !important;
+        padding: 16px 0 !important;
+    }
+    .table.book tr:last-child {
+        background-color: #fcf8e3 !important;
+    }
+    .table.book tr td:nth-child(1) {
+        font-weight: bold !important;
+    }
+    .table.book tr:nth-child(1),
+    .table.book tr:nth-child(5),
+    .table.book tr:nth-child(6),
+    .table.book tr:nth-child(6) {
+        border-top: none !important;
+        padding: 0 !important;
+        padding-bottom: 16px !important;
+    }
+    .table.book tr:nth-child(1) td:nth-child(2),
+    .table.book tr:nth-child(1) td:nth-child(4),
+    .table.book tr:nth-child(2) td:nth-child(2),
+    .table.book tr:nth-child(2) td:nth-child(4),
+    .table.book tr:nth-child(3) td:nth-child(2),
+    .table.book tr:nth-child(3) td:nth-child(4),
+    .table.book tr:nth-child(4) td:nth-child(4),
+    .table.book tr:nth-child(5) td:nth-child(1),
+    .table.book tr:nth-child(5) td:nth-child(4),
+    .table.book tr:nth-child(6) td:nth-child(1),
+    .table.book tr:nth-child(6) td:nth-child(4),
+    .table.book tr:nth-child(7) td:nth-child(2),
+    .table.book tr:nth-child(7) td:nth-child(4),
+    .table.book tr:nth-child(7) td:nth-child(4),
+    .table.book tr:nth-child(8) td:nth-child(2),
+    .table.book tr:nth-child(8) td:nth-child(4),
+    .table.book tr:nth-child(9) td:nth-child(2),
+    .table.book tr:nth-child(9) td:nth-child(4),
+    .table.book tr:nth-child(10) td:nth-child(2),
+    .table.book tr:nth-child(10) td:nth-child(4) {
+        display: none !important;
+    }
+    .table.book .label-success {
+        font-size: 16px !important;
+    }
+}
